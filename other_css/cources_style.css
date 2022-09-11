@@ -1,0 +1,494 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500;600;700&family=Gentium+Book+Plus&family=Inter:wght@900&family=Lobster&family=Pacifico&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Rubik:wght@500&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+header{
+    width: 100%;
+    height: 8vh;
+    /* border-bottom: 1px solid white; */
+    position: relative;
+    position: fixed;
+    top: 0%;
+    display: flex;
+    z-index: 10000;
+}
+.site_logo{
+    width: 5%;
+    height: 100%;
+    /* border-right: 1px solid white; */
+    background-color: black;
+}
+.site_logo img{
+    width: 70%;
+    position: relative;
+    left: 15%;
+    top: 3%;
+}
+.menu_btn{
+    width: 4%;
+    height: 100%;
+    /* border: 1px solid black; */
+    display: flex;
+    align-items: center;
+    justify-content: center;    
+    background-color: transparent;
+    display: none;
+}
+.menu_btn button{
+    width: 50%;
+    height: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* border: 1px solid red; */
+    font-size: 3.5vh;
+    color: black;
+    background-color: transparent;
+}
+.dropdown_menu{
+    width: 9%;
+    height: 32vh;;
+    background-color: white;
+    position: absolute;
+    top: 8vh;
+    left: 5%;
+    display: block;
+    z-index: 100000;
+    display: none;
+    border-radius: 5px;
+}
+.dropdown_menu a{
+    width: 100%;
+    height: 14.4%;
+    border: 1px solid lightgray;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: black;
+    font-size: 2vh;
+    text-decoration: none;
+}
+.dropdown_menu a:hover{
+    background-color: black;
+    color: white;
+}
+.links_display{
+    width: 55%;
+    height: 100%;
+    /* border-right: 1px solid white; */
+    background-color: black;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+.links_display ul{
+    display: flex;
+    position: relative;
+    left: 2.5%;
+    top: 10%;
+    list-style: none;
+}
+.links_display ul li{
+    color: white;
+    padding: 15px;
+}
+.links_display ul li a{
+    color: white;
+    font-family: 'Rubik', sans-serif;
+    text-decoration: none;
+    font-size: 2.2vh;
+    transition: 0.1s;
+    padding: 15px;
+}
+.links_display ul li a:hover{
+    background-color: white;
+    color: black;
+}
+.confirm_button{
+    width: 40%;
+    height: 100%;
+    background-color: black;
+}
+.confirm_btn{
+    width: 36%;
+    height: 64%;
+    background-color: transparent;
+    color: white;
+    border: 1px solid white;
+    position: relative;
+    top: 18%;
+    left: 62%;
+    border-radius: 7px;
+    font-size: 2vh;
+    letter-spacing: 1px;
+    font-weight: 600;
+}
+.confirm_btn:hover{
+    box-shadow: 0px 0px 5px 0px white;
+    text-shadow: 0px 0px 5px white;
+}
+main{
+    width: 100%;
+    height: auto;
+    /* border: 1px solid blue; */
+    position: absolute;
+    top: 8vh;
+    padding: 0% 10%;
+}
+.main_content{
+    width: 100%;
+    height: auto;
+    /* border: 1px solid red; */
+}
+.first_header{
+    width: 100%;
+    height: 28vh;
+    /* border: 1px solid black; */
+    display: flex;
+    justify-content: center;
+}
+.first_header h1{
+    padding: 6% 0%;
+    font-size: 6.4vh;
+}
+.horizontal_line{
+    width: 75%;
+    height: 1px;
+    border: 1px solid gray;
+    margin: auto;
+}
+.description_text{
+    width: 100%;
+    height: 50vh;
+    /* border: 1px solid black; */
+}
+.description_text p{
+    font-size: 4vh;
+    padding:  5% 8%;
+    text-align: center;
+}
+.horizontal_line_v2{
+    width: 100%;
+    height: 1px;
+    border: 1px solid gray;
+}
+.wind_instruments_row{
+    width: 100%;
+    height: 60vh;
+    /* border: 1px solid red; */
+    display: flex;
+    justify-content: space-between;
+}
+/* .wind_instruments_row_main{
+    width: 100%;
+    height: 100%;
+    border: 1px solid blue;
+} */
+.wind_instruments_card{
+    width: 23%;
+    height: 100%;
+    border: 1px solid lightgray;
+}
+.wind_instruments_image{
+    width: 100%;
+    height: 45%;
+    /* border-bottom: 1px solid blue; */
+}
+.wind_instruments_image img{
+    width: 100%;
+    height: 100%;
+    z-index: -100;
+}
+.wind_instruments_image{
+    background-size: cover;
+    background-repeat: no-repeat;
+    transition: 0.3s;
+    background-position: center;
+}
+.wind_instruments_image:hover .animation_btn{
+    display: block;
+}
+.animation_btn{
+    width: 100%;
+    height: 100%;
+    background:  linear-gradient(90deg, #fe8f62 0, #ff8564 8.33%, #ff7967 16.67%, #ff6c6b 25%, #fd5e6e 33.33%, #f84e73 41.67%, #f23c78 50%, #ea287e 58.33%, #e10e86 66.67%, #d6008f 75%, #ca0098 83.33%, #bb00a3 91.67%, #aa00ae 100%);
+    z-index: 100;
+    display: none;
+    transition: 0.3s;
+}
+.animation_btn span{
+    width: 100%;
+    height: 16%;
+    border: 1px solid white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    top: 42%;
+}
+.animation_btn span a{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    width: 50%;
+    height: 100%;
+    /* border: 1px solid white; */
+    text-decoration: none;
+    font-size: 2vh;
+}
+.animation_btn span a:hover{
+    border: 1px solid white;
+    border-radius: 2px;
+}
+.animation_btn span a p{
+    padding-top: 8%;
+    padding-left: 5%;
+}
+.animation_btn span a i{
+    padding-top: 0.5%;
+}
+.wind_instruments_text{
+    width: 100%;
+    height: 43%;
+    /* border-bottom: 1px solid red; */
+}
+.wind_instruments_text p{
+    padding: 10%;
+    font-size: 2.5vh;
+    text-align: start;
+}
+.wind_instruments_functions{
+    width: 100%;
+    height: 12%;
+    border: 1px solid lightgray;
+    display: flex;
+}
+.func_price{
+    width: 80%;
+    height: 100%;
+    border-right: 1px solid lightgray;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+.func_price h2{
+    padding: 0% 10%;
+}
+.func_more{
+    width: 20%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 4vh;
+    transition: 0.3s;
+}
+.func_more:hover{
+    background-color: black;
+    color: white;
+}
+.instrument_cources_name{
+    width: 100%;
+    height: 12vh;
+    /* border: 1px solid black; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.instrument_cources_name h2{
+    font-size: 5.5vh;
+}
+.space_1{
+    width: 100%;
+    height: 20vh;
+    background-color: transparent;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.string_instruments_column{
+    width: 100%;
+    height: 500vh;
+    /* border: 1px solid blue; */
+    flex-direction: column;
+}
+.string_instruments_card{
+    width: 100%;
+    height: 8.18%;
+    border: 1px solid lightgray;
+    display: flex;
+    margin-top: 2.65%;
+}
+.string_instruments_image{
+    width: 40%;
+    height: 100%;
+    /* border-right: 1px solid red; */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.string_instruments_description{
+    width: 55%;
+    height: 100%;
+    /* border-right: 1px solid green; */
+    /* padding: 0% 0%; */
+}
+.level_value{
+    width: 100%;
+    height: 10%;
+    /* border: 1px solid red; */
+    position: relative;
+    top: 0%;
+    margin-top: 9.5%;
+}
+.level_value h2{
+    font-size: 3vh;
+    padding: 0% 5%;
+}
+.detailed_value_description{
+    width: 100%;
+    height: 11%;
+    /* border: 1px solid green; */
+}
+.detailed_value_description p{
+    font-size: 2.3vh;
+    padding: 0.5% 5%;
+}
+.about_level{
+    width: 100%;
+    height: 30%;
+    /* border: 1px solid black; */
+}
+.about_level > div{
+    padding: 0.4% 5%;
+}
+.about_level > div p{
+    font-size: 2vh;
+}
+.teacher_name{
+    width: 100%;
+    height: 33.333%;
+    /* border: 1px solid black; */
+}
+.terms_of_study{
+    width: 100%;
+    height: 33.333%;
+    /* border: 1px solid black; */
+}
+.schedule{
+    width: 100%;
+    height: 33.333%;
+    /* border: 1px solid black; */
+}
+.string_instruments_cources_price{
+    width: 100%;
+    height: 12%;
+    /* border: 1px solid black; */
+    display: flex;
+    justify-content: flex-start;
+    padding: 0.4% 5%;
+}
+.string_btns_panel{
+    width: 5%;
+    height: 100%;
+    /* border: 1px solid blue; */
+    flex-direction: column;
+}
+.string_btns_panel button{
+    width: 100%;
+    height: 18%;
+    margin-top: 62%;
+    background-color: transparent;
+    font-size: 3.5vh;
+    border: none;
+}
+.string_btns_panel button:hover{
+    background: red;
+    color: white;
+}
+/* .string_instruments_top_row{
+    width: 100%;
+    height: 50%;
+    border: 1px solid red;
+}
+.string_instruments_bottom_row{
+    width: 100%;
+    height: 50%;
+    border: 1px solid blue;
+} */
+.string_instruments_image .animation_btn span a{
+    font-size: 3vh;
+}
+.string_instruments_image .animation_btn span a p{
+    margin-top: -3%;
+}
+.string_instruments_image:hover .animation_btn{
+    display: block;
+}
+footer{
+    width: 125%;
+    height: 60vh;
+    background-color: black;
+    position: relative;
+    top: 5vh;
+    left: -12.6%;
+    display: block;
+}
+.footer_content{
+    width: 80%;
+    height: 100%;
+    /* border: 1px solid white; */
+    margin: auto;
+    display: flex;
+}
+.footer_row{
+    width: 25%;
+    height: 100%;
+    /* border: 1px solid red; */
+}
+.footer_row ul{
+    list-style: none;
+}
+.footer_row ul li{
+    padding-top: 4%;
+}
+.footer_row ul li a{
+    text-decoration: none;
+    color: white;
+    font-size: 2vh;
+}
+.footer_row ul li a:hover{
+    text-decoration: underline;
+}
+.footer_row ul li:first-child{
+    font-size: 2.2vh;
+    color: white;
+    padding-top: 8%;
+    padding-bottom: 2%;
+}
+.footer_row span p{
+    color: white;
+    padding-top: 8%;
+    padding-bottom: 2%;
+    font-size: 2vh;
+    /* padding-left: 7%;
+    padding-right: 7%; */
+}
+.social_icons{
+    width: 100%;
+    height: 8%;
+    /* border: 1px solid white; */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    top: 10%;
+}
+.social_icons a{
+    display: block;
+    font-size: 4vh;
+    color: white;
+}

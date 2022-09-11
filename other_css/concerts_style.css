@@ -1,0 +1,180 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500;600;700&family=Gentium+Book+Plus&family=Inter:wght@900&family=Lobster&family=Pacifico&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Rubik:wght@500&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+header{
+    width: 100%;
+    height: 8vh;
+    /* border-bottom: 1px solid white; */
+    position: relative;
+    position: fixed;
+    top: 0%;
+    display: flex;
+    z-index: 10000;
+}
+.site_logo{
+    width: 5%;
+    height: 100%;
+    /* border-right: 1px solid white; */
+    background-color: black;
+}
+.site_logo img{
+    width: 70%;
+    position: relative;
+    left: 15%;
+    top: 5%;
+}
+.menu_btn{
+    width: 4%;
+    height: 100%;
+    /* border: 1px solid black; */
+    display: flex;
+    align-items: center;
+    justify-content: center;    
+    background-color: transparent;
+    display: none;
+}
+.menu_btn button{
+    width: 50%;
+    height: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* border: 1px solid red; */
+    font-size: 3.5vh;
+    color: black;
+    background-color: transparent;
+}
+.dropdown_menu{
+    width: 9%;
+    height: 32vh;;
+    background-color: white;
+    position: absolute;
+    top: 8vh;
+    left: 5%;
+    display: block;
+    z-index: 100000;
+    display: none;
+    border-radius: 5px;
+}
+.dropdown_menu a{
+    width: 100%;
+    height: 14.4%;
+    border: 1px solid lightgray;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: black;
+    font-size: 2vh;
+    text-decoration: none;
+}
+.dropdown_menu a:hover{
+    background-color: black;
+    color: white;
+}
+.links_display{
+    width: 55%;
+    height: 100%;
+    /* border-right: 1px solid white; */
+    background-color: black;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+.links_display ul{
+    display: flex;
+    position: relative;
+    left: 2.5%;
+    top: 10%;
+    list-style: none;
+}
+.links_display ul li{
+    color: white;
+    padding: 5%;
+}
+.links_display ul li a{
+    color: white;
+    font-family: 'Rubik', sans-serif;
+    text-decoration: none;
+    font-size: 2.2vh;
+    transition: 0.1s;
+}
+.links_display ul li:hover{
+    background-color: white;
+    color: black;
+}
+.links_display ul li a:hover{
+    color: black;
+}
+.confirm_button{
+    width: 40%;
+    height: 100%;
+    background-color: black;
+}
+.confirm_btn{
+    width: 36%;
+    height: 64%;
+    background-color: transparent;
+    color: white;
+    border: 1px solid white;
+    position: relative;
+    top: 18%;
+    left: 62%;
+    border-radius: 7px;
+    font-size: 2vh;
+    letter-spacing: 1px;
+    font-weight: 600;
+}
+.confirm_btn:hover{
+    box-shadow: 0px 0px 5px 0px white;
+    text-shadow: 0px 0px 5px white;
+}
+main{
+    width: 100%;
+    height: auto;
+    /* border: 1px solid red; */
+    position: absolute;
+    top: 8vh;
+}
+.main_page_content{
+    width: 100%;
+    height: 100%;
+    /* border: 1px solid green; */
+}
+.concert_image_1{
+    width: 100%;
+    height: 92vh;
+    /* border: 1px solid blue; */
+    background-image: url(../pictures/1614138399_26-p-fon-s-kontsertnoi-stsenoi-26.jpg);
+    background-size: 100% 100%;
+    transition: 1s;
+}
+.concert_information{
+    width: 30%;
+    height: 70%;
+    border: 1px solid white;
+    /* background-color: rgba(0, 0, 0, 0.400); */
+    position: relative;
+    top: 15%;
+    left: 35%;
+    transition: 1s;
+}
+.black_filter{
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.300);
+    z-index: 1000;
+}
+.concert_name{
+    width: 100%;
+    height: 15%;
+    border: 1px solid white;
+    color: white;
+    text-align: center;
+    padding: 2.5% 0%;
+}
+.concert_name h2{
+    font-size: 5vh;
+}

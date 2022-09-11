@@ -1,0 +1,517 @@
+@media screen and (max-width: 767px) {
+    @import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500;600;700&family=Gentium+Book+Plus&family=Inter:wght@900&family=Lobster&family=Pacifico&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Rubik:wght@500&display=swap');
+    *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    /* body{
+        background:  linear-gradient(90deg, #fe8f62 0, #ff8564 8.33%, #ff7967 16.67%, #ff6c6b 25%, #fd5e6e 33.33%, #f84e73 41.67%, #f23c78 50%, #ea287e 58.33%, #e10e86 66.67%, #d6008f 75%, #ca0098 83.33%, #bb00a3 91.67%, #aa00ae 100%); */
+        header{
+            width: 100%;
+            height: 108vh;
+            /* background-image: url(./pictures/609eadc5e15ce6521ae0cc22_1_music_Top.jpg);
+            background-size: cover;
+            background-position: center; */
+            /* filter: brightness(50%); */
+            /* color: white; */
+            background:  linear-gradient(90deg, #fe8f62 0, #ff8564 8.33%, #ff7967 16.67%, #ff6c6b 25%, #fd5e6e 33.33%, #f84e73 41.67%, #f23c78 50%, #ea287e 58.33%, #e10e86 66.67%, #d6008f 75%, #ca0098 83.33%, #bb00a3 91.67%, #aa00ae 100%);
+        }
+        nav{
+            width: 100%;
+            height: 8vh;
+            /* border-bottom: 1px solid white; */
+            position: relative;
+            top: 0%;
+            display: flex;
+        }
+        .site_logo{
+            width: 9%;
+            height: 100%;
+            /* border-right: 1px solid white; */
+        }
+        .site_logo img{
+            width: 80%;
+            position: relative;
+            left: 10%;
+            top: 10%;
+        }
+        .menu_btn{
+            width: 8%;
+            height: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: black;
+            font-size: 3.5vh;
+        }
+        .menu_btn button{
+            width: 60%;
+            height: 60%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 3vh;
+            color: black;
+            background-color: transparent;
+            border: none;
+        }
+        .dropdown_menu{
+            width: 20%;
+            height: 32vh;;
+            background-color: white;
+            position: absolute;
+            top: 7vh;
+            left: 8.9%;
+            display: block;
+            z-index: 100000;
+            display: none;
+            border-radius: 5px;
+        }
+        .dropdown_menu a{
+            width: 100%;
+            height: 14.4%;
+            border: 1px solid lightgray;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: black;
+            font-size: 2vh;
+            text-decoration: none;
+        }
+        .dropdown_menu a:hover{
+            background-color: black;
+            color: white;
+        }
+        .links_display{
+            width: 55%;
+            height: 100%;
+            border-right: 1px solid white;
+            background-color: black;
+            opacity: 0.7;
+            display: flex;
+            justify-content: flex-start;
+            align-items: center;
+            display: none;
+        }
+        .links_display ul{
+            display: flex;
+            position: relative;
+            left: 2.5%;
+            top: 10%;
+            list-style: none;
+        }
+        .links_display ul li{
+            color: white;
+            padding: 5%;
+        }
+        .links_display ul li a{
+            color: white;
+            font-family: 'Rubik', sans-serif;
+            text-decoration: none;
+            font-size: 2.2vh;
+            transition: 0.1s;
+        }
+        .links_display ul li a:hover{
+            text-shadow: 0px 0px 20px white;
+        }
+        .confirm_button{
+            width: 83%;
+            height: 100%;
+            background: none;
+        }
+        .confirm_btn{
+            width: 36%;
+            height: 70%;
+            background-color: transparent;
+            color: white;
+            border: 1px solid white;
+            position: relative;
+            top: 15%;
+            left: 62%;
+            border-radius: 7px;
+            font-size: 2vh;
+            letter-spacing: 1px;
+            font-weight: 600;
+        }
+        .main_header{
+            width: 100%;
+            height: 100vh;
+            flex-direction: column;
+        }
+        .header_part_1{
+            width: 100%;
+            height: 60%;
+        }
+        .site_slider{
+            width: 36%;
+            height: 100%;
+            position: relative;
+            left: 4%;
+            background-color: white;
+        }
+        .slide_img img{
+            width: 100%;
+        }
+        .slider{
+            width: 100%;
+            height: 84%;
+            border: none;
+            position: relative;
+            top: 2%;
+            left: 0%;
+        }
+        .slider_pos{
+            background-color: black;
+            height: 100%;
+            position: relative;
+        }
+        .header_part_2{
+            width: 100%;
+            height: 40%;
+            /* border: 1px solid red; */
+        }
+        .header_panel{
+            width: 100%;
+            height: 100%;
+            /* border: 1px solid black; */
+            position: relative;
+            top: 0%;
+            left: 0%
+        }
+        .header_name{
+            width: 100%;
+            height: 20%;
+            /* border: 1px solid white; */
+            opacity: 1;
+            position: relative;
+            top: 0%;
+        }
+        .header_name h1{
+            color: white;
+            font-family: 'Dancing Script', cursive;
+            text-align: center;
+            padding-top: 0%;
+            font-size: 6vh;
+        }
+        .header_text{
+            width: 100%;
+            height: 36%;
+            /* border: 1px solid white; */
+            position: relative;
+            top: 0%;
+        }
+        .header_text p{
+            color: white;
+            font-family: 'Dancing Script', cursive;
+            font-size: 140%;
+            padding: 1.5% 5%;
+            line-height: 4.5vh;
+            font-size: 3.7vh;
+        }
+        .header_btns{
+            width: 100%;
+            height: 19%;
+            /* border: 1px solid white; */
+            position: relative;
+            top: 0%;
+        }
+        .header_btns span{
+            width: 100%;
+            height: 90%;
+            /* border: 1px solid white; */
+            display: flex;
+            justify-content: center;
+            margin: auto;
+            position: relative;
+            top: 5%;
+        }
+        .first_btn{
+            position: relative;
+            left: -1.5%;
+            top: 0%;
+            background: linear-gradient(to  top left ,purple, blueviolet, blue);
+            color: white;
+            font-size: 2vh;
+            width: 30%;
+            height: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-decoration: none;
+            border-radius: 60px;
+            font-family: sans-serif;
+            transition: 0.5s;
+        }
+        .first_btn:hover{
+            background: black;
+            color: white;
+        }
+        .second_btn{
+            position: relative;
+            top: 0%;
+            left: 1.5%;
+            font-size: 2vh;
+            background: linear-gradient(to top left, aqua, lightblue, blue);
+            color: white;
+            width: 30%;
+            height: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-decoration: none;
+            border-radius: 60px;
+            font-family: sans-serif;
+            transition: 0.5s;
+        }
+        .second_btn:hover{
+            background: black;
+            color: white;
+        }
+        main{
+            width: 100%;
+            height: auto;
+            border: 1px solid white;
+            margin: auto;
+            /* background: linear-gradient(90deg, #fe8f62 0, #ff8564 8.33%, #ff7967 16.67%, #ff6c6b 25%, #fd5e6e 33.33%, #f84e73 41.67%, #f23c78 50%, #ea287e 58.33%, #e10e86 66.67%, #d6008f 75%, #ca0098 83.33%, #bb00a3 91.67%, #aa00ae 100%);; */
+        }
+        .block_for_content_v1{
+            width: 100%;
+            height: 150vh;
+            border: 1px solid lightgray;
+            margin: auto;
+        }
+        .block_name{
+            width: 100%;
+            height: 7%;
+            /* border: 1px solid black; */
+            position: relative;
+            top: 0%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .block_name h2{
+            color: black;
+            font-size: 4vh;
+        }
+        .block_main_content{
+            width: 100%;
+            height: 93%;
+            /* border: 1px solid red; */
+            flex-direction: column;
+        }
+        .block_picture{
+            width: 100%;
+            height: 65%;
+            /* border: 1px solid blue; */
+            position: relative;
+            top: 0%;
+        }
+        .block_picture img{
+            top: 5%;
+            width: 100%;
+            height: 90%;
+        }
+        .block_text_social{
+            width: 100%;
+            height: 35%;
+            /* border: 1px solid green; */
+            position: relative;
+            top: 0%;
+            flex-direction: column;
+        }
+        .block_text{
+            width: 100%;
+            height: 85%;
+            /* border: 1px solid blue; */
+        }
+        .block_text p{
+            padding: 4% 6%;
+            padding-right: 9%;
+            font-size: 2.8vh;
+        }
+        .block_social{
+            width: 100%;
+            height: 15%;
+            /* border: 1px solid red; */
+            display: flex;
+        }
+        .block_social span{
+            margin-top: 0%;
+            width: 15%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: auto;
+            /* border: 1px solid black; */
+        }
+        .block_social span a{
+            color: black;
+            font-size: 4vh;
+            transition: 0.3s;
+        }
+        .block_social span a:hover{
+            transform: scale(1.2);
+        }
+        .course_content{
+            width: 100%;
+            height: 110vh;
+            border: 1px solid lightgray;
+            margin: auto;
+        }
+        .courses_name{
+            width: 100%;
+            height: 6%;
+            /* border: 1px solid black; */
+            position: relative;
+            top: 5%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .courses_name h2{
+            font-size: 4vh;
+        }
+        .courses_main{
+            width: 100%;
+            height: 85%;
+            /* border: 1px solid green; */
+            position: relative;
+            top: 5%;
+            flex-direction: column;
+        }
+        .courses_img{
+            width: 100%;
+            height: 61%;
+            /* border: 1px solid red; */
+            position: relative;
+            top: 5%;
+        }
+        .courses_img img{
+            width: 100%;
+            height: 100%;
+        }
+        .courses_promise_text{
+            width: 100%;
+            height: 39%;
+            /* border: 1px solid blue; */
+            position: relative;
+        }
+        .courses_promise_text p{
+            font-size: 2.9vh;
+            padding: 5% 5.5%;
+        }
+        .concert_events{
+            width: 100%;
+            height: 110vh;
+            border: 1px solid lightgray;
+            margin: auto;
+        }
+        .concert_name{
+            width: 100%;
+            height: 10%;
+            /* border: 1px solid black; */
+            position: relative;
+            top: 7%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .concert_content{
+            width: 100%;
+            height: 83%;
+            /* border: 1px solid red; */
+            position: relative;
+            top: 7%;
+            flex-direction: column-reverse;
+        }
+        .concert_text{
+            width: 100%;
+            height: 36%;
+            /* border: 1px solid green; */
+            padding: 5%;
+        }
+        .concert_text p{
+            font-size: 2.55vh;
+        }
+        .concert_images{
+            width: 100%;
+            height: 64%;
+            /* border: 1px solid red; */
+            display: grid;
+            grid-template-columns: auto auto;
+            
+        }
+        .concert_image{
+            border: 1px solid black;
+        }
+        .concert_image img{
+            width: 100%;
+            height: 100%;
+        }
+        footer{
+            width: 100%;
+            height: 120vh;
+            background-color: black;
+            position: relative;
+            top: 5vh;
+            left: 0%;
+        }
+        .footer_content{
+            width: 80%;
+            height: 100%;
+            /* border: 1px solid white; */
+            margin: auto;
+            flex-wrap: wrap;
+        }
+        .footer_row{
+            width: 50%;
+            height: 50%;
+            /* border: 1px solid red; */
+        }
+        .footer_row ul{
+            list-style: none;
+        }
+        .footer_row ul li{
+            padding-top: 2.5%;
+        }
+        .footer_row ul li a{
+            text-decoration: none;
+            color: white;
+            font-size: 2.6vh;
+        }
+        .footer_row ul li:first-child{
+            font-size: 2.9vh;
+            color: white;
+            padding-top: 0%;
+            padding-bottom: 2%;
+        }
+        .footer_row span p{
+            color: white;
+            padding-top: 0%;
+            padding-bottom: 2%;
+            padding-left: 8%;
+            padding-right: 8%;
+            font-size: 2.6vh;
+        }
+        .social_icons{
+            width: 82%;
+            height: 36%;
+            /* border: 1px solid white; */
+            flex-direction: column;
+            /* justify-content: space-between;
+            align-items: center;
+            position: relative; */
+            top: 0%;
+            left: 8%;
+            display: grid;
+            grid-template-columns: auto auto auto;
+        }
+        .social_icons a{
+            display: block;
+            font-size: 5.5vh;
+            color: white;
+        }
+        
+}

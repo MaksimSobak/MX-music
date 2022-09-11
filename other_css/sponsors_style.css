@@ -1,0 +1,301 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500;600;700&family=Gentium+Book+Plus&family=Inter:wght@900&family=Lobster&family=Pacifico&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Rubik:wght@500&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+header{
+    width: 100%;
+    height: 8vh;
+    /* border-bottom: 1px solid white; */
+    position: relative;
+    position: fixed;
+    top: 0%;
+    display: flex;
+    z-index: 10000;
+}
+.site_logo{
+    width: 5%;
+    height: 100%;
+    /* border-right: 1px solid white; */
+    background-color: black;
+}
+.site_logo img{
+    width: 70%;
+    position: relative;
+    left: 15%;
+    top: 5%;
+}
+.menu_btn{
+    width: 4%;
+    height: 100%;
+    /* border: 1px solid black; */
+    display: flex;
+    align-items: center;
+    justify-content: center;    
+    background-color: transparent;
+    display: none;
+}
+.menu_btn button{
+    width: 50%;
+    height: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* border: 1px solid red; */
+    font-size: 3.5vh;
+    color: black;
+    background-color: transparent;
+}
+.dropdown_menu{
+    width: 9%;
+    height: 32vh;;
+    background-color: white;
+    position: absolute;
+    top: 8vh;
+    left: 5%;
+    display: block;
+    z-index: 100000;
+    display: none;
+    border-radius: 5px;
+}
+.dropdown_menu a{
+    width: 100%;
+    height: 14.4%;
+    border: 1px solid lightgray;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: black;
+    font-size: 2vh;
+    text-decoration: none;
+}
+.dropdown_menu a:hover{
+    background-color: black;
+    color: white;
+}
+.links_display{
+    width: 55%;
+    height: 100%;
+    /* border-right: 1px solid white; */
+    background-color: black;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+.links_display ul{
+    display: flex;
+    position: relative;
+    left: 2.5%;
+    top: 10%;
+    list-style: none;
+}
+.links_display ul li{
+    color: white;
+    padding: 15px;
+}
+.links_display ul li a{
+    color: white;
+    font-family: 'Rubik', sans-serif;
+    text-decoration: none;
+    font-size: 2.2vh;
+    transition: 0.1s;
+    padding: 15px;
+}
+.links_display ul li a:hover{
+    color: black;
+    background-color: white;
+}
+.confirm_button{
+    width: 40%;
+    height: 100%;
+    background-color: black;
+}
+.confirm_btn{
+    width: 36%;
+    height: 64%;
+    background-color: transparent;
+    color: white;
+    border: 1px solid white;
+    position: relative;
+    top: 18%;
+    left: 62%;
+    border-radius: 7px;
+    font-size: 2vh;
+    letter-spacing: 1px;
+    font-weight: 600;
+}
+.confirm_btn:hover{
+    box-shadow: 0px 0px 5px 0px white;
+    text-shadow: 0px 0px 5px white;
+}
+main{
+    position: absolute;
+    top: 8vh;
+    width: 100%;
+    height: auto;
+    /* border: 1px solid black; */
+}
+.main_content{
+    width: 80%;
+    height: 100%;
+    /* border: 1px solid red; */
+    margin: auto;
+}
+.first_header{
+    width: 100%;
+    height: 28vh;
+    /* border: 1px solid black; */
+    display: flex;
+    justify-content: center;
+}
+.first_header h1{
+    padding: 6% 0%;
+    font-size: 6.4vh;
+}
+.horizontal_line{
+    width: 75%;
+    height: 1px;
+    border: 1px solid gray;
+    margin: auto;
+}
+.description_text{
+    width: 100%;
+    height: 28vh;
+    /* border: 1px solid black; */
+}
+.description_text p{
+    font-size: 4vh;
+    padding:  5% 8%;
+    text-align: center;
+}
+.horizontal_line_v2{
+    width: 100%;
+    height: 1px;
+    border: 1px solid gray;
+}
+.space_0{
+    width: 100%;
+    height: 16vh;
+    /* border: 1px solid red; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.space_0 h2{
+    font-size: 5vh;
+}
+.top_3{
+    width: 100%;
+    height: 40vh;
+    /* border: 1px solid black; */
+    margin-top: 10vh;
+}
+.sponsors_cards{
+    width: 100%;
+    height: 100%;
+    /* border: 1px solid red; */
+}
+.v-1{
+    display: flex;
+    justify-content: space-evenly;
+}
+.sponsor_card{
+    width: 18%;
+    height: 100%;
+    border: 1px solid lightgray;
+    border-radius: 6px;
+}
+.sponsor_icon{
+    width: 100%;
+    height: 75%;
+    /* border-bottom: 1px solid red; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 16vh;
+}
+.sponsor_name{
+    width: 100%;
+    height: 12.5%;
+    /* border: 1px solid red; */
+    text-align: center;
+}
+.sponsor_name p{
+    font-size: 1.9vh;
+    padding: 1.5% 0%;
+}
+.sponsor_contacts{
+    width: 100%;
+    height: 12.5%;
+    /* border: 1px solid blue; */
+    text-align: center;
+}
+.sponsor_contacts a{
+    color: black;
+    text-decoration: none;
+    font-size: 1.9vh;
+}
+footer{
+    width: 100%;
+    height: 60vh;
+    background-color: black;
+    position: relative;
+    display: block;
+    margin-top: 5vh;
+}
+.footer_content{
+    width: 80%;
+    height: 100%;
+    /* border: 1px solid white; */
+    margin: auto;
+    display: flex;
+}
+.footer_row{
+    width: 25%;
+    height: 100%;
+    /* border: 1px solid red; */
+}
+.footer_row ul{
+    list-style: none;
+}
+.footer_row ul li{
+    padding-top: 4%;
+}
+.footer_row ul li a{
+    text-decoration: none;
+    color: white;
+    font-size: 2vh;
+}
+.footer_row ul li a:hover{
+    text-decoration: underline;
+}
+.footer_row ul li:first-child{
+    font-size: 2.2vh;
+    color: white;
+    padding-top: 8%;
+    padding-bottom: 2%;
+}
+.footer_row span p{
+    color: white;
+    padding-top: 8%;
+    padding-bottom: 2%;
+    font-size: 2vh;
+    /* padding-left: 7%;
+    padding-right: 7%; */
+}
+.social_icons{
+    width: 100%;
+    height: 8%;
+    /* border: 1px solid white; */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    top: 10%;
+}
+.social_icons a{
+    display: block;
+    font-size: 4vh;
+    color: white;
+}
